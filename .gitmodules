@@ -1,0 +1,3 @@
+[submodule "react-redux"]
+	path = react-redux
+	url = https://github.com/reduxjs/react-redux.git
