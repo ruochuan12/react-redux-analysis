@@ -1,9 +1,8 @@
 ---
-id: version-7.2-hooks
+id: hooks
 title: Hooks
 sidebar_label: Hooks
 hide_title: true
-original_id: hooks
 ---
 
 # Hooks
@@ -154,11 +153,11 @@ const selectNumOfTodosWithIsDoneValue = createSelector(
 )
 
 export const TodoCounterForIsDoneValue = ({ isDone }) => {
-  const NumOfTodosWithIsDoneValue = useSelector(state =>
+  const numOfTodosWithIsDoneValue = useSelector(state =>
     selectNumOfTodosWithIsDoneValue(state, isDone)
   )
 
-  return <div>{NumOfTodosWithIsDoneValue}</div>
+  return <div>{numOfTodosWithIsDoneValue}</div>
 }
 
 export const App = () => {
